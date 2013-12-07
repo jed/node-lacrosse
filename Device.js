@@ -50,7 +50,7 @@ DeviceRawReadStream.prototype._read = function() {
 
       var data = data.response && data.response.obs
 
-      if (!obs) return process.exit()
+      if (!data) return process.exit()
 
       stream.push(data)
     })
