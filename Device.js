@@ -48,7 +48,11 @@ DeviceRawReadStream.prototype._read = function() {
     request.get(options, function(err, res, data) {
       if (err) return stream.emit("error", err)
 
-      stream.push(data.response.obs)
+      var data = data.response && data.response.obs
+
+      if (!obs) return process.exit()
+
+      stream.push(data)
     })
   }
 }
