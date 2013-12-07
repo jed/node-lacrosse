@@ -7,7 +7,7 @@ Usage
 -----
 
 ```javascript
-var lacrosse = require("./")
+var lacrosse = require("lacrosse")
 
 var client = new lacrosse.Client({
   username: "MY USERNAME",
