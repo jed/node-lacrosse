@@ -1,6 +1,6 @@
 {
   "name": "node-lacrosse",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A streaming API for Lacrosse Alert sensors",
   "main": "index.js",
   "scripts": {
